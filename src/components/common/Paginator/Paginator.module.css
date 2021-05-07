@@ -1,0 +1,34 @@
+.paginator {
+	margin-top: auto;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.pageLink {
+	display: inline-block;
+
+	margin: 0 5px;
+	padding: 3px 12px;
+
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #fdb;
+
+	color: #000;
+	cursor: pointer;
+}
+
+.pageLink:hover {
+	background-color: #da9;
+}
+
+.active {
+	background-color: #956;
+	color: #fff;
+}
+
+.active:hover {
+	background-color: #956;
+	cursor: auto;
+}
+

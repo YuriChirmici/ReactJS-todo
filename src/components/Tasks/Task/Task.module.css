@@ -1,0 +1,27 @@
+.task {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 30px;
+}
+
+.checkbox label {
+	margin-left: 5px;
+}
+
+.button {
+	padding: 8px 16px;
+
+	border: 1px solid #333;
+	border-radius: 14px;
+
+	background-color: transparent;
+	cursor: pointer;
+
+	transition: background .15s linear;
+}
+
+.button:hover {
+	background-color: #fde;
+}
