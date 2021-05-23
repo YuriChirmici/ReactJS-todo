@@ -4,7 +4,7 @@ import menu from "../../../img/menu.png";
 import {useState} from "react";
 
 const ColorSettings = (props) => {
-	let [settingsIsOpened, settingsIsOpenedChange] = useState(true);
+	let [settingsIsOpened, settingsIsOpenedChange] = useState(false);
 
 	let onSetColors = (e) => {
 		let nums = {1: "first", 2: "second"};
