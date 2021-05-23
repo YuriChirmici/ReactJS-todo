@@ -1,0 +1,24 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	min-height: 100vh;
+	padding: 50px 15px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 450px) {
+	.container {
+		padding: 8px;
+	}
+}

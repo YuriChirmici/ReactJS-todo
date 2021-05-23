@@ -1,7 +1,7 @@
 import Tasks from "./Tasks";
 import {connect} from "react-redux";
 import {updateTaskText, addNewTask, deleteTask, updateTaskState, 
-	updateCurrentPage} from "../../redux/tasks-reducer";
+	updateCurrentPage} from "../../../redux/tasks-reducer";
 
 
 let mapStateToProps = (state) => {
@@ -21,24 +21,12 @@ let mapStateToProps = (state) => {
 	}
 }
 
-let mapDispatchToProps = (dispatch) => {
-	return {
-		updateTaskText(currentText) {
-			dispatch(updateTaskText(currentText));
-		},
-		addNewTask() {
-			dispatch(addNewTask());
-		},
-		deleteTask(taskId){
-			dispatch(deleteTask(taskId));
-		},
-		updateTaskState(isChecked, taskId){
-			dispatch(updateTaskState(isChecked, taskId));
-		},
-		updateCurrentPage(pageNumber) {
-			dispatch(updateCurrentPage(pageNumber));
-		},
-	}
+let mapDispatchToProps = {
+	updateTaskText,
+	addNewTask,
+	deleteTask,
+	updateTaskState,
+	updateCurrentPage,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Tasks);

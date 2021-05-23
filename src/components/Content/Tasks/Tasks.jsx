@@ -1,11 +1,12 @@
 import styles from "./Tasks.module.css";
 import Task from "./Task/Task";
-import Paginator from "../common/Paginator/Paginator";
+import Paginator from "../../common/Paginator/Paginator";
 
 const Tasks = (props) => {
 	let tasks = props.tasks.map( task => {
 		return (
 			<Task 
+				key={task.taskId}
 				taskId={task.taskId}
 				text={task.text}
 				isChecked={task.isChecked}

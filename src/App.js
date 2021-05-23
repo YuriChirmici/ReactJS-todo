@@ -1,11 +1,9 @@
 import './App.css';
-import ListContainer from "./components/Tasks/TasksContainer";
+import ContentContainer from "./components/Content/ContentContainer";
 
 const App = (props) => {
 	return (
-		<div className="container">
-			<ListContainer />
-		</div>
+		<ContentContainer />
 	);
 }
 

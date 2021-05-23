@@ -1,0 +1,43 @@
+.colorSettings {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 30px;
+
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+
+}
+
+.colorSettings__inner{
+	padding: 15px;
+	border: 1px solid #000;
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 0 0 40px #444;
+}
+
+.colorSettings__inner li {
+	list-style-type: none;
+}
+
+.colorSettings__inner input {
+	background: #ffffff;
+}
+
+.colorSettings__inner ul {
+	margin-bottom: 10px;
+}
+
+.close {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.btnClose {
+	background: 0;
+	border: 0;
+	cursor: pointer;
+}

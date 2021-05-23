@@ -15,13 +15,13 @@ let initialState = {
 
 const setStateIntoLocalStorage = (state) => {
 	let jState = JSON.stringify(state)
-	localStorage.setItem("state", jState)
+	localStorage.setItem("tasks", jState)
 }
 
-if (localStorage.getItem("state") === null) {
+if (localStorage.getItem("tasks") === null) {
 	setStateIntoLocalStorage(initialState);
 } else {
-	initialState = JSON.parse(localStorage.getItem("state"));
+	initialState = JSON.parse(localStorage.getItem("tasks"));
 }
 
 const newTaskCreator = (state) => {

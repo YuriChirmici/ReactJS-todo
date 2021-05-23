@@ -6,6 +6,7 @@ const Paginator = (props) => {
 	for(let i = 1; i <= pageNumber; i++) {
 		pages.push(
 			<span
+				key={i}
 				onClick={ () => props.updateCurrentPage(i)}
 				className={styles.pageLink + " " + (i === props.currentPage
 					? styles.active :"")}
