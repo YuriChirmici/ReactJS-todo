@@ -1,5 +1,5 @@
-const SET_COLORS = "SET_COLORS";
-const SET_ANGLE = "SET_ANGLE";
+const SET_COLORS = "colors/SET_COLORS";
+const SET_ANGLE = "colors/SET_ANGLE";
 
 let initialState = {
 	first: {
