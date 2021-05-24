@@ -39,7 +39,6 @@ const ColorSettings = (props) => {
 
 	let firstColorList = colorsInList(props.first, 1);
 	let secondColorList = colorsInList(props.second, 2);
-	let angle = colorsInList(props.angle, "");
 
 	let display = settingsIsOpened ? "box" : "none";
 	let style = {display}

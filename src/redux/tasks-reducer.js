@@ -42,11 +42,6 @@ const tasksReducer = (state = initialState, action) => {
 			}
 			break;
 		case ADD_TASK: 
-			let newTask = {
-				taskId: state.taskCounter + 1,
-				text: state.currentText,
-				isChecked: false,
-			}
 			newState = {
 				...state,
 				taskCounter: state.taskCounter + 1,
