@@ -1,12 +1,12 @@
 import Content from "./Content";
 import {connect} from "react-redux";
-
+import {getFirst, getSecond, getAngle} from "../../redux/colors-selectors";
 
 let mapStateToProps = (state) => {
 	return {
-		first: state.colors.first,
-		second: state.colors.second,
-		angle: state.colors.angle,
+		first: getFirst(state),
+		second: getSecond(state),
+		angle: getAngle(state),
 	}
 }
 

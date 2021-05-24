@@ -15,7 +15,7 @@ const ColorSettings = (props) => {
 	}
 	let colorsInList = (colors, index) => {
 		let newColorsList = []
-		let colorsMin = {red: "R", green: "G", blue: "B", opacity: "O"}
+		let colorsMin = {red: "R", green: "G", blue: "B", opacity: "A"}
 		let i = 0;
 		for (let color in colors) {
 			i++;
@@ -26,8 +26,8 @@ const ColorSettings = (props) => {
 						type="range" 
 						name={index + color}
 						min="0" 
-						max={colorsMin[color] !== "O" ? "255" : "1"}
-						step={colorsMin[color] !== "O" ? "1" : "0.01"}
+						max={colorsMin[color] !== "A" ? "255" : "1"}
+						step={colorsMin[color] !== "A" ? "1" : "0.01"}
 						value={colors[color]} 
 						onChange={onSetColors}
 					/> 
