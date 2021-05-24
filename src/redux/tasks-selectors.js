@@ -1,6 +1,8 @@
 import {createSelector} from "reselect";
 
+//tasks length
 export const getTasksCount = (state) => state.tasksPage.tasks.length;
+//id generator
 export const getTaskCounter = (state) => state.tasksPage.taskCounter;
 export const getCurrentText = (state) => state.tasksPage.currentText;
 export const getPageSize = (state) => state.tasksPage.pageSize;
