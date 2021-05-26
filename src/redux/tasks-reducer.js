@@ -6,7 +6,7 @@ const ADD_TASK = "tasks/ADD_TASK";
 const TASK_DELETE = "tasks/TASK_DELETE"
 const UPDATE_TASK_STATE = "tasks/UPDATE_TASK_STATE";
 const UPDATE_CURRENT_PAGE = "tasks/UPDATE_CURRENT_PAGE";
-const STORAGE_NAME = "YK/todo/tasks";
+const STORAGE_NAME = "todo/tasks";
 
 let initialState = {
 	taskCounter: 0,

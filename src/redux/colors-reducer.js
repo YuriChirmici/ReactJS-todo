@@ -3,7 +3,7 @@ import {setStateIntoLocalStorage, getStateFromLocalStorage}
 
 const SET_COLORS = "colors/SET_COLORS";
 const SET_ANGLE = "colors/SET_ANGLE";
-const STORAGE_NAME = "YK/todo/colors";
+const STORAGE_NAME = "todo/colors";
 
 let initialState = {
 	first: {
