@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReactJS-todo/static/css/main.f3277daf.chunk.css",
+    "main.js": "/ReactJS-todo/static/js/main.9ce74a08.chunk.js",
+    "main.js.map": "/ReactJS-todo/static/js/main.9ce74a08.chunk.js.map",
+    "runtime-main.js": "/ReactJS-todo/static/js/runtime-main.0b77fa29.js",
+    "runtime-main.js.map": "/ReactJS-todo/static/js/runtime-main.0b77fa29.js.map",
+    "static/js/2.0cadbad3.chunk.js": "/ReactJS-todo/static/js/2.0cadbad3.chunk.js",
+    "static/js/2.0cadbad3.chunk.js.map": "/ReactJS-todo/static/js/2.0cadbad3.chunk.js.map",
+    "static/js/3.8c13448a.chunk.js": "/ReactJS-todo/static/js/3.8c13448a.chunk.js",
+    "static/js/3.8c13448a.chunk.js.map": "/ReactJS-todo/static/js/3.8c13448a.chunk.js.map",
+    "index.html": "/ReactJS-todo/index.html",
+    "static/css/main.f3277daf.chunk.css.map": "/ReactJS-todo/static/css/main.f3277daf.chunk.css.map",
+    "static/js/2.0cadbad3.chunk.js.LICENSE.txt": "/ReactJS-todo/static/js/2.0cadbad3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b77fa29.js",
+    "static/js/2.0cadbad3.chunk.js",
+    "static/css/main.f3277daf.chunk.css",
+    "static/js/main.9ce74a08.chunk.js"
+  ]
+}
