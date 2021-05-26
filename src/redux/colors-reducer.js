@@ -1,5 +1,9 @@
+import {setStateIntoLocalStorage, getStateFromLocalStorage}
+	from "../helpers/localStorageSetter";
+
 const SET_COLORS = "colors/SET_COLORS";
 const SET_ANGLE = "colors/SET_ANGLE";
+const STORAGE_NAME = "YK/todo/colors";
 
 let initialState = {
 	first: {
@@ -17,16 +21,7 @@ let initialState = {
 	angle: 90,
 }
 
-const setStateIntoLocalStorage = (state) => {
-	let jState = JSON.stringify(state)
-	localStorage.setItem("colors", jState)
-}
-
-if (localStorage.getItem("colors") === null) {
-	setStateIntoLocalStorage(initialState);
-} else {
-	initialState = JSON.parse(localStorage.getItem("colors"));
-}
+initialState = getStateFromLocalStorage(initialState, STORAGE_NAME)
 
 const colorsReducer = (state = initialState, action) => {
 	let newState = state;
@@ -43,7 +38,7 @@ const colorsReducer = (state = initialState, action) => {
 			newState = state;
 			break;
 	}
-	setStateIntoLocalStorage(newState);
+	setStateIntoLocalStorage(newState, STORAGE_NAME);
 	return newState;
 }
 

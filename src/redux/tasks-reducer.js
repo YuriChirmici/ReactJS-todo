@@ -1,8 +1,12 @@
+import {setStateIntoLocalStorage, getStateFromLocalStorage}
+	from "../helpers/localStorageSetter";
+
 const UPDATE_TASK_TEXT = "tasks/UPDATE_TASK_TEXT";
 const ADD_TASK = "tasks/ADD_TASK";
 const TASK_DELETE = "tasks/TASK_DELETE"
 const UPDATE_TASK_STATE = "tasks/UPDATE_TASK_STATE";
 const UPDATE_CURRENT_PAGE = "tasks/UPDATE_CURRENT_PAGE";
+const STORAGE_NAME = "YK/todo/tasks";
 
 let initialState = {
 	taskCounter: 0,
@@ -13,16 +17,7 @@ let initialState = {
 	currentPage: 1,
 }
 
-const setStateIntoLocalStorage = (state) => {
-	let jState = JSON.stringify(state)
-	localStorage.setItem("tasks", jState)
-}
-
-if (localStorage.getItem("tasks") === null) {
-	setStateIntoLocalStorage(initialState);
-} else {
-	initialState = JSON.parse(localStorage.getItem("tasks"));
-}
+initialState = getStateFromLocalStorage(initialState, STORAGE_NAME)
 
 const newTaskCreator = (state) => {
 	return {
@@ -79,7 +74,7 @@ const tasksReducer = (state = initialState, action) => {
 			newState = state;
 			break;
 	}
-	setStateIntoLocalStorage(newState);
+	setStateIntoLocalStorage(newState, STORAGE_NAME);
 	return newState;
 }
 
